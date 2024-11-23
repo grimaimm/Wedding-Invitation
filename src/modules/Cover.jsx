@@ -17,8 +17,8 @@ const CoverModules = ({ to, openInvitation }) => {
             <Image
               src="/images/bg.png"
               alt="background"
-              width={200}
-              height={200}
+              width={220}
+              height={220}
               rounded="rounded-full"
               className="mx-auto"
             />
