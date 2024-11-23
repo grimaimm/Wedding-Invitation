@@ -39,11 +39,11 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content={`${baseUrl}/images/bg.png`}
+          content={`${baseUrl}images/bg.png`}
         />
         <meta
           property="og:image:secure_url"
-          content={`${baseUrl}/images/bg.png`}
+          content={`${baseUrl}images/bg.png`}
         />
         <meta property="og:image:type" content="image/png" />
         <meta
