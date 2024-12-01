@@ -22,6 +22,11 @@ const GiftCard = () => {
       }
     );
   };
+  
+  const nameBank = process.env.NEXT_PUBLIC_BANK_SATU || "";
+  const noRek = process.env.NEXT_PUBLIC_NOREK_BANK_SATU || "";
+  const iconBank = process.env.NEXT_PUBLIC_LOGO_BANK_SATU || "";
+  const anName = process.env.NEXT_PUBLIC_AN_BANK_SATU || "";
 
   return (
     <div className="flex flex-col gap-4 mt-6">
@@ -29,20 +34,20 @@ const GiftCard = () => {
       <div className="card bg-neutral-800 w-full shadow-xl" data-aos="fade-up">
         <figure className="px-8 pt-10 flex me-auto">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1598px-Bank_Central_Asia.svg.png"
+            src={iconBank}
             className="max-w-[9vh]"
-            alt="bca"
+            alt={nameBank}
           />
         </figure>
         <div className="card-body !pt-4 !flex !justify-between flex-row">
           <div className="flex flex-col justify-start items-start">
-            <p> ---- ---- ---- 4567 </p>
-            <h2 className="card-title !mb-0 mt-1 text-neutral-100">Aan bin Malik</h2>
+            <p> --- --- --- 2991</p>
+            <h2 className="card-title !mb-0 mt-1 text-neutral-100">{anName}</h2>
           </div>
           <div className="flex flex-col justify-end items-end">
             <button
               className="btn btn-outline btn-sm rounded-full"
-              onClick={() => copyToClipboard("1234567891234567", "BCA")}
+              onClick={() => copyToClipboard(`${noRek}`, "BCA")}
             >
               {copySuccessBCA ? <FaCheck /> : <FaCopy />}
               <span className="mt-0.5">{copySuccessBCA ? "Tersalin" : "Salin"}</span>
@@ -52,7 +57,7 @@ const GiftCard = () => {
       </div>
 
       {/* Bank Negara Indonesia */}
-      <div className="card bg-neutral-800 w-full shadow-xl" data-aos="fade-up">
+      {/* <div className="card bg-neutral-800 w-full shadow-xl" data-aos="fade-up">
         <figure className="px-8 pt-10 flex me-auto">
           <img
             src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/1024px-BNI_logo.svg.png"
@@ -75,7 +80,7 @@ const GiftCard = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

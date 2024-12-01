@@ -5,7 +5,7 @@ const QuranVersesModules = () => {
     <div className="hero bg-base-200">
       <div className="hero-content text-center">
         <div className="max-w-lg">
-          <h2 class="font-sacramento py-4 text-[2rem] text-neutral-100">
+          <h2 className="font-sacramento py-4 text-[2rem] text-neutral-100">
             Allah Subhanahu Wa Ta'ala berfirman
           </h2>
           <div className="flex flex-col gap-4">

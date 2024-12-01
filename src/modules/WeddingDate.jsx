@@ -14,7 +14,7 @@ const WeddingDateModules = () => {
     <div id="tanggal" className="hero bg-black">
       <div className="hero-content text-center">
         <div className="max-w-lg">
-          <h2 class="font-sacramento mb-4 text-[2.5rem] text-neutral-100">
+          <h2 className="font-sacramento mb-4 text-[2.5rem] text-neutral-100">
             Moment Bahagia
           </h2>
           <Countdown />
@@ -29,12 +29,20 @@ const WeddingDateModules = () => {
                 Akad
               </h2>
               <p className="text-neutral-400">
-                Pukul {jamAkad} {timeUTC} - Selesai
+                Pukul {jamAkad} {timeUTC}
               </p>
             </div>
             <div className="py-2 space-y-2" data-aos="fade-left" data-aos-duration="1500">
               <h2 className="font-sacramento text-4xl text-neutral-100">
-                Resepsi
+                Resepsi Siang
+              </h2>
+              <p className="text-neutral-400">
+                Pukul 12.00 {timeUTC} - Selesai
+              </p>
+            </div>
+            <div className="py-2 space-y-2" data-aos="fade-right" data-aos-duration="1500">
+              <h2 className="font-sacramento text-4xl text-neutral-100">
+                Resepsi Malam
               </h2>
               <p className="text-neutral-400">
                 Pukul {jamResepsi} {timeUTC} - Selesai
